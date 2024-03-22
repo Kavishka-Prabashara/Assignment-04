@@ -1,16 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <title>Case-05</title>
+    <title>Animation Case 03</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="style/normalize.css">
+
     <style>
+        div{
+            overflow: hidden;
+        }
+
+        div figure{
+            width: 400%;
+            position: relative;
+            margin: 0;
+            left: 0;
+            animation: 15s slider infinite;
+            animation-direction: alternate-reverse;
+
+        }
+        div figure img{
+            width: 25%;
+            float: left;
+        }
+
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -300%;
+            }
+        }
 
     </style>
 </head>
 <body>
-<main>
+<div>
+    <figure>
+        <img src="assets/images/Wallpaper%20(1).jpg" alt="Wallpaper 01">
+        <img src="assets/images/Wallpaper%20(2).jpg" alt="Wallpaper 02">
+        <img src="assets/images/Wallpaper%20(3).jpg" alt="Wallpaper 03">
+        <img src="assets/images/Wallpaper%20(4).jpg" alt="Wallpaper 04">
+        <img src="assets/images/Wallpaper%20(5).jpg" alt="Wallpaper 05">
+        <img src="assets/images/Wallpaper%20(6).jpg" alt="Wallpaper 06">
+        <img src="assets/images/Wallpaper%20(7).jpg" alt="Wallpaper 07">
+        <img src="assets/images/Wallpaper%20(8).jpg" alt="Wallpaper 08">
+        <img src="assets/images/Wallpaper%20(9).jpg" alt="Wallpaper 09">
+        <img src="assets/images/Wallpaper%20(10).jpg" alt="Wallpaper 10">
 
-</main>
+    </figure>
+</div>
 </body>
 </html>
