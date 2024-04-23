@@ -1,52 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Case-02</title>
-    <meta name="viewport" content="width=device-width initial-scale=1">
+
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="assets/fontawsome/css/all.min.css">
 
     <style>
-        section{
-            width: 100vw;
-            height: 100vh;
-            background-color:dodgerblue;
-            position: relative;
+        body{
+            background-color: purple;
         }
-
         div{
+            width: 300px;
+            aspect-ratio: 1/1;
+            background-color: grey;
+            border-radius: 100%;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-            width: 300px;
-            height: 300px;
-            background-color: grey;
+            /*border: 10px white;*/
+            /*border-top-color: red;*/
+        }
+
+        div h1{
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: black;
+        }
+
+        /*psuedo element */
+        div::before{  /*divge athule thiyena ekata mokak hari add karanna on nn */
+            content: " ";
+            border: 20px solid white;
             border-radius: 100%;
-            border: 10px solid white;
-            border-top-color: #ff253a;
-            transition-property: border-top-color;
-            transition: 0.25s;
-            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-top-color: red;
         }
-        div:hover {
-            transition-property: border-top-color, transform;
-            border-top-color: #ff253a;
+        div:hover::before{
             transform: rotate(360deg);
-            transition: 2s;
-            cursor: pointer;
+            transition-duration: 2s;
         }
-
-
     </style>
 </head>
 <body>
-<section>
-    <div></div>
-</section>
-
+<div>
+    <h1> RWAD</h1>
+</div>
 </body>
 </html>
